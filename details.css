@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+hr {
+  border: 1px solid var(--rose-pink);
+  border-radius: 50%;
+  margin-top: 5px;
+}
+body {
+  background: var(--rose-pink);
+  background-image: url(images/pink-texture.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  background-blend-mode: multiply;
+}
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--rose-pink-opacity);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  position: relative;
+}
+.flower-det {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.image {
+  flex: 1;
+  text-align: center;
+}
+.flower-photo {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+.color {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 12px;
+  background-color: var(--brown-light);
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.color input {
+  margin-right: 2px;
+  accent-color: red;
+}
+.color label {
+  margin-right: 10px;
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.info {
+  flex: 2;
+}
+.info .name {
+  font-size: 4rem;
+  color: var(--brown-light);
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 3px;
+  font-style: italic;
+  font-family: "Playfair", serif;
+  font-weight: bold;
+}
+.line {
+  margin: 12px 0;
+  font-size: 16px;
+}
+.def {
+  font-weight: 600;
+  color: var(--olive-green);
+}
+.det {
+  margin-left: 8px;
+  color: var(--olive-green-light);
+  font-weight: bold;
+}
+.extra-info {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+.box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  background: var(--cream);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.shop {
+  text-align: center;
+  margin-top: 30px;
+}
+#shopBtn {
+  background: var(--olive-green);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+#shopBtn:hover {
+  background: var(--olive-green-light);
+  transform: scale(1.05);
+}
+.bouqet-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--olive-green-light);
+}
+.icon {
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  .flower-det {
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+  .extra-info {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+  .shop .bouqet-info {
+    font-size: 14px;
+  }
+  #shopBtn {
+    width: 80%;
+    font-size: 15px;
+  }
+  .icon {
+    top: 15px;
+    right: 10px;
+  }
+}
+@media (max-width: 560px) {
+  .info .name {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  .line {
+    font-size: 14px;
+  }
+  #shopBtn {
+    padding: 10px 20px;
+  }
+  .icon {
+    top: 10px;
+    right: 5px;
+  }
+}
+@media (max-width: 420px) {
+  .info .name {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 315px) {
+  .icon {
+    display: none;
+  }
+  .flower-photo {
+    width: 80%;
+  }
+  .info .name {
+    font-size: 1.5rem;
+  }
+}
