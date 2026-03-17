@@ -31,7 +31,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 120px 30px 0 30px;
+  padding: 70px 30px 0 30px;
   gap: 10px;
 }
 .sec1 h1 {
@@ -53,7 +53,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 100px 30px 0 30px;
+    padding: 120px 30px 0 30px;
   }
 }
 @media (max-width: 411px) {
@@ -62,7 +62,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 100px 30px 0 30px;
+    padding: 120px 30px 0 30px;
   }
   .sec1 .image img {
     width: 300px;
