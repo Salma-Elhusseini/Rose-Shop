@@ -31,7 +31,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 70px 30px 0 30px;
+  padding: 120px 30px 0 30px;
   gap: 10px;
 }
 .sec1 h1 {
